@@ -41,7 +41,7 @@ In this case you don't need to run Docker and you will be asked one additional q
 ? Please provide path for images endpoint (https://demo.vuestorefront.io/img/)
 ```
 
-You can simply proceed and as a result you will have a `vue-storefront` folder inside your project root and Storefront application running on `http://localhost:3000`. All images will be also hosted at `https://demo.vuestorefront.io/img/`.
+You can simply proceed and as a result you will have a `vue-storefront` folder inside your project root and Storefront application running on `http://localhost:8000`. All images will be also hosted at `https://demo.vuestorefront.io/img/`.
 
 ### Installing the vue-storefront-api locally
 
@@ -65,7 +65,7 @@ After you answered all the questions, the installation process will start (it mi
 │ You've just successfully installed vue-storefront.             │
 │ All required servers are running in background                 │
 │                                                                │
-│ Storefront: http://localhost:3000                              │
+│ Storefront: http://localhost:8000                              │
 │ Backend: http://localhost:8080                                 │
 │                                                                │
 │ Logs: /Users/natalia/Desktop/work/test/vue-storefront/var/log/ │
@@ -74,7 +74,7 @@ After you answered all the questions, the installation process will start (it mi
 └────────────────────────────────────────────────────────────────┘
 ```
 
-Your project should contain 2 folders at this moment: `vue-storefront` and `vue-storefront-api`. Vue Storefront should be running on `http://localhost:3000`:
+Your project should contain 2 folders at this moment: `vue-storefront` and `vue-storefront-api`. Vue Storefront should be running on `http://localhost:8000`:
 
 ![Storefront screenshot](../images/storefront.png)
 
@@ -204,4 +204,4 @@ If you choose the **legacy** mode, be sure to run `yarn install` first!
    docker-compose up
    ```
 
-That's all - your frontend application is now up and running! You can check it on `localhost:3000`
+That's all - your frontend application is now up and running! You can check it on `localhost:8000`

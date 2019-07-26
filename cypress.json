@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "http://localhost:8000",
   "projectId": "xrqwrm",
   "fixturesFolder": "test/e2e/fixtures",
   "integrationFolder": "test/e2e/integration",

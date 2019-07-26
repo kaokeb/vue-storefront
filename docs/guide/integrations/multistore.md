@@ -149,12 +149,12 @@ After these changes, you'll have a `LanguageSwitcher` component visible on the b
 
 By default, the language / store is switched by the URL prefix:
 
-- `http://localhost:3000` is for the default store
-- `http://localhost:3000/it` will switch the store to the Italian one
-- `http://localhost:3000/de` will switch the store to the German one one
+- `http://localhost:8000` is for the default store
+- `http://localhost:8000/it` will switch the store to the Italian one
+- `http://localhost:8000/de` will switch the store to the German one one
 
 General URL format is:
-`http://localhost:3000/{storeCode}`
+`http://localhost:8000/{storeCode}`
 
 The storeCode may be switched by ENV variable set before running `npm run dev` / `npm start`:
 

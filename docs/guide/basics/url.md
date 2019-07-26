@@ -6,8 +6,8 @@ When `config.seo.useUrlDispatcher` set to true the `product.url_path` and `categ
 
 For example, when the `category.url_path` is set to `women/frauen-20` the product will be available under the following URL addresses:
 
-`http://localhost:3000/women/frauen-20`
-`http://localhost:3000/de/women/frauen-20`
+`http://localhost:8000/women/frauen-20`
+`http://localhost:8000/de/women/frauen-20`
 ...
 
 **Please note:** The `config.products.useShortCatalogUrls` should be set to `false` in order to have `urlDispatcher` working properly. It may interfere with the Url Dispatcher mechanism.

@@ -58,7 +58,7 @@ You can find some examples in the `src/extensions/raw-output-example` example.
 
 ### Generating the XML output
 
-Example URL: `http://localhost:3000/raw-output-example.xml`
+Example URL: `http://localhost:8000/raw-output-example.xml`
 
 Route setup to switch the Vue layout:
 
@@ -109,7 +109,7 @@ These two statements:
 
 ### Switching off layout and injecting dynamic content
 
-Example URL: `http://localhost:3000/append-prepend.html`
+Example URL: `http://localhost:8000/append-prepend.html`
 
 Route setup to switch the Vue layout:
 

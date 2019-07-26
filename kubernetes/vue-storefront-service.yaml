@@ -8,5 +8,5 @@ spec:
   selector:
     app: vue-storefront
   ports:
-  - port: 3000
-    targetPort: 3000
+  - port: 8000
+    targetPort: 8000

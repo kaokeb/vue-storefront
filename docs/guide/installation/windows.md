@@ -106,4 +106,4 @@ We're using the powerful node.js library for config files. Check the docs to lea
 yarn dev
 ```
 
-Now you should have Vue Storefront running on `localhost:3000`.
+Now you should have Vue Storefront running on `localhost:8000`.

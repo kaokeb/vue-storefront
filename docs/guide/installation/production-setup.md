@@ -166,7 +166,7 @@ Vue Storefront SSR responses contain the full markup and JSON objects included f
 
 ```
 location / {
-  proxy_pass http://localhost:3000/;
+  proxy_pass http://localhost:8000/;
 }
 ```
 
@@ -174,7 +174,7 @@ We're using [`proxy_pass`](http://nginx.org/en/docs/http/ngx_http_proxy_module.h
 
 ```
 location /assets/ {
-  proxy_pass http://localhost:3000/assets/;
+  proxy_pass http://localhost:8000/assets/;
 }
 ```
 
@@ -209,18 +209,18 @@ ProxyPassReverse /api http://localhost:8080/api/
 ProxyPass /img/ http://localhost:8080/img/
 ProxyPassReverse /img http://localhost:8080/img/
 
-ProxyPass /assets/ http://localhost:3000/assets/
-ProxyPassReverse /assets http://localhost:3000/assets/
+ProxyPass /assets/ http://localhost:8000/assets/
+ProxyPassReverse /assets http://localhost:8000/assets/
 
-ProxyPass / http://localhost:3000/
-ProxyPassReverse / http://localhost:3000/
+ProxyPass / http://localhost:8000/
+ProxyPassReverse / http://localhost:8000/
 ```
 
 You also need to enable [mod_proxy](https://httpd.apache.org/docs/current/mod/mod_proxy.html) for this.
 
 ### Vue Storefront and Vue Storefront API
 
-After you have the NGINX set up, you should get a `502 error` when accessing the https://prod.vuestorefront.io. This is totally fine! We just missed the most important step, which is running backend services that will power up our installation. Now NGINX is trying to connect to `localhost:3000` for `vue-storefront` and `localhost:8080` for `vue-storefront-api` without any success.
+After you have the NGINX set up, you should get a `502 error` when accessing the https://prod.vuestorefront.io. This is totally fine! We just missed the most important step, which is running backend services that will power up our installation. Now NGINX is trying to connect to `localhost:8000` for `vue-storefront` and `localhost:8080` for `vue-storefront-api` without any success.
 
 We created a Linux user called `vuestorefront` and go to `/home/www/vuestorefront` which is our home directory.
 

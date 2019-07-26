@@ -24,11 +24,11 @@ data:
             text/html;
 
         location / {
-            proxy_pass http://vue-storefront:3000/;
+            proxy_pass http://vue-storefront:8000/;
         }
 
         location /assets/ {
-            proxy_pass http://vue-storefront:3000/assets/;
+            proxy_pass http://vue-storefront:8000/assets/;
         }
 
         location /api/ {
